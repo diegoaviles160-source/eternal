@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eternal | Clínica Dermatológica</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />  
+  
+</head id="Home">
+
+
+ <nav class="navbar">
+  <div class="nav-header">
+    <div class="nav-logo">
+      
+        <img src="img-eternal/logobz.png" alt="logo">
+      
+    </div>
+
+    
+    <button class="nav-menu-btn" id="menu-btn" aria-label="Abrir menú">
+      ☰
+    </button>
+  </div>
+
+ 
+  <ul class="nav-links" id="nav-links">
+   
+    <li><a style="font-weight: 600;" href="#Services">Servicios</a></li>
+    <li><a style=" font-weight: 600;" href="#Contact">¡Contáctanos!</a></li>
+    <li><a style=" font-weight: 600;" href="#Dir">Dirección y Horarios</a></li>
+  </ul>
+</nav>
+
+<body>
+
+  
+
+  <script>
+  const menuBtn = document.getElementById("menu-btn");
+  const navLinks = document.getElementById("nav-links");
+
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+
+<a href="#" class="float-home" >
+HOME
+</a>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=5216441272978&text=Hola, me gustaria Obtener más información" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float "></i>
+</a>
+
+
+  
+  <section class="hero">
+    <div class="hero-arc-text">Dermatología clinica profesional</div>
+    <div class="hero-columns">
+      <div class="hero-left">
+        <div class="hero-img-wrap">
+          <div class="hero-img-placeholder">
+            <img src="img-eternal/skin-care.jpg" alt="">
+          </div>
+          <div class="hero-tag">Cuidado Profesional</div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <h1 class="hero-title">
+          <span>Nuestra prioridad</span>
+          <span>es tu <strong style="color: #7acbc6;"> salud </strong></span>
+        </h1>
+        <div class="hero-buttons">
+          <button class="btn-primary" onclick="window.location.href='#Contact'">Agenda hoy</button>
+          <button class="btn-secondary" onclick="window.location.href='#Services'">Nuestros servicios</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="about reveal">
+    <div class="about-inner">
+      <p class="about-by">By: Evelyn Bonilla</p>
+      <h1 id="Services" class="about-text">
+        Clínica de Dermatología cosmiatría y belleza en <strong style="font-weight: 800;"> Ciudad Obregón </strong> que combina dermatología clínica y estética para brindar tratamientos personalizados, seguros y enfocados en la salud y belleza de la piel.
+      </h1>
+    </div>
+  </section>
+
+ 
+
+ 
+<div class="modal-overlay" id="modalOverlay"></div>
+
+
+
+
+<div class="modal" id="modal-1">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('modal-1')">&#x2715;</button>
+
+    <div class="modal-img-wrap" id="imgWrap-1">
+      <div class="modal-img-placeholder" id="imgPlaceholder-1">
+        <img src="img-eternal/treatment.jpg" alt="" >
+      </div>
+      
+     
+      <input type="file" id="fileInput-1" accept="image/*" onchange="previewImage(event,'imgPreview-1','imgPlaceholder-1')">
+    </div>
+
+    <div class="modal-body">
+      <h2 class="modal-title">Servicios de Consulta</h2>
+      <ul class="modal-desc">
+        <li>Consulta dermatológica profesional</li>
+        <li>Diagnóstico de enfermedades de la piel</li>
+        <li>Tratamiento personalizado de condiciones cutáneas</li>
+        <li>Asesoramiento en cuidado de la piel, cabello y uñas</li>
+      
+      
+      </ul>
+      
+      
+     
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="modal-2">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('modal-2')">&#x2715;</button>
+
+    <div class="modal-img-wrap" >
+      <div class="modal-img-placeholder" id="imgPlaceholder-2">
+        <img src="img-eternal/facial.jpg" alt="">
+      </div>
+      <img id="imgPreview-2" src="" alt="" style="display:none;"/>
+      
+         </div>
+
+    <div class="modal-body">
+      <h2 class="modal-title">Tratamientos Faciales</h2>
+      <ul class="modal-desc">
+        <li>Tratamientos de acné</li>
+        <li>Tratamientos de manchas</li>
+        <li>Tratamientos de rejuvenecimiento facial</li>
+        <li>Colágeno facial</li>
+        <li>Dermapen</li>
+        <li>Piel Sensible</li>
+        <li>PDRN de salmón</li>
+
+      
+      
+      </ul>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="modal-3">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('modal-3')">&#x2715;</button>
+
+    <div class="modal-img-wrap" >
+      <div class="modal-img-placeholder" id="imgPlaceholder-3">
+        <img src="img-eternal/body.jpg" alt="">
+      </div>
+      </div>
+       
+     
+
+    <div class="modal-body">
+      <h2 class="modal-title">Tratamientos Corporales</h2>
+      <ul class="modal-desc">
+        <li>Tratamientos especializados para mejorar la apariencia, firmeza y bienestar corporal.</li>
+        <li>Tratamientos para tratar fibrosis</li>
+        <li>Tratamientos Post Operatorios</li>
+        <li>Celulitis</li>
+      
+      
+      </ul>
+     
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="modal-4">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('modal-4')">&#x2715;</button>
+
+    <div class="modal-img-wrap" >
+      <div class="modal-img-placeholder" id="imgPlaceholder-4">
+        <img src="img-eternal/nails.jpg" alt="">
+      </div>
+        
+       
+      
+    </div>
+
+    <div class="modal-body">
+      <h2 class="modal-title">Uñas / Gelish</h2>
+      <ul class="modal-desc">
+        <li>Cuidado estético de uñas con productos de alta calidad</li>
+        <li>Aplicación de gelish para uñas decorativas</li>
+        <li>Tratamiento de uñas dañadas o debilitadas</li>
+        <li>Asesoramiento personalizado sobre cuidado de uñas</li>
+      
+      
+      </ul>
+       
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<section   class="services">
+  <h2 class="services-title reveal">Nuestros Servicios</h2>
+  <div class="services-grid">
+
+    <div class="service-card reveal reveal-delay-1">
+      <h3>Servicios de Consulta</h3>
+      <p>Evaluación dermatológica profesional para el diagnóstico y tratamiento de enfermedades de la piel, cabello y uñas.</p>
+      <a class="btn-info" href="#" onclick="openModal(event,'modal-1')">Más información</a>
+    </div>
+
+    <div class="service-card reveal reveal-delay-2">
+      <h3>Tratamientos Faciales</h3>
+      <p>Procedimientos dermatológicos enfocados en el cuidado facial, acné, manchas y rejuvenecimiento.</p>
+      <a class="btn-info" href="#" onclick="openModal(event,'modal-2')">Más información</a>
+    </div>
+
+    <div class="service-card reveal reveal-delay-3">
+      <h3>Tratamientos Corporales</h3>
+      <p>Tratamientos especializados para mejorar la apariencia, firmeza y bienestar corporal.</p>
+      <a class="btn-info" href="#" onclick="openModal(event,'modal-3')">Más información</a>
+    </div>
+
+    <div class="service-card reveal reveal-delay-4">
+      <h3>Uñas / Gelish</h3>
+      <p>Cuidado estético de uñas con productos de alta calidad.</p>
+      <a class="btn-info" href="#" onclick="openModal(event,'modal-4')">Más información</a>
+    </div>
+
+  </div>
+</section>
+
+
+  
+
+
+  <section id="Contact" class="contact reveal">
+    <div class="contact-inner">
+    <p class="contact-title">Contáctanos</p>
+
+    <div  class="social-icons">
+   
+      <a href="https://www.facebook.com/people/Eternal-Cosmetologia/61581632717186/#" target="_blank" rel="noopener noreferrer" class="social-icon" title="Facebook">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+      </a>
+  
+      
+    
+      <a href="https://www.instagram.com/eternal_cosmetologia/" target="_blank" rel="noopener noreferrer" class="social-icon" title="Instagram">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+      
+      <a href="https://api.whatsapp.com/send?phone=5216441272978&text=Hola, me gustaria Obtener más información"  target="_blank" class="social-icon" title="WhatsApp">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      </a>
+    </div>
+
+    <h2 class="address-title">Dirección y horarios<br>de atención</h2>
+    <div class="hours">
+      <p><strong> Lunes a viernes </strong> 08:30am a 01:00pm · 02:00pm a 07:00pm</p>
+      <p><strong>Sábado </strong> 10:00am a 05:00pm</p>
+    </div>
+
+    
+    <div id="Dir" class="map-strip">
+      
+      <div class="map-strip-inner"  >
+        
+        <div class="map-thumb">
+           <div class="map-thumb" style="font-size: 15px; margin-bottom: 10px;"><strong> Dirección: </strong> Calle tabasco 2916, interior Plaza Tabasco </div>
+          <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d884.9917477955597!2d-109.94350423036595!3d27.47028698841554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86c8177494585fcb%3A0x58d3b21f55bb8d1e!2sEternal%20cosmetologia!5e0!3m2!1ses!2smx!4v1770162575710!5m2!1ses!2smx"
+                width="300" height="200" style="border:10px;"  allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="map"></iframe></div>
+        
+       
+      </div>
+    </div>
+    </div>
+  </section>
+
+  
+  <footer>
+    <p>© 2026 Eternal · Ciudad Obregón, Sonora · </p>
+  </footer>
+
+  
+
+
+  <script>
+
+    
+  //modal
+  const overlay = document.getElementById('modalOverlay');
+
+  function openModal(e, id) {
+    e.preventDefault();
+    overlay.classList.add('active');
+    document.getElementById(id).classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal(id) {
+    overlay.classList.remove('active');
+    document.getElementById(id).classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  // Close overlay 
+  overlay.addEventListener('click', () => {
+    document.querySelectorAll('.modal.active').forEach(m => m.classList.remove('active'));
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+  });
+
+  // Close tecla Escape 
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal.active').forEach(m => m.classList.remove('active'));
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
+
+  
+
+
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(en => { if (en.isIntersecting) en.target.classList.add('visible'); });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => observer.observe(el));
+
+
+    
+     observer = new IntersectionObserver((entries) => {
+      entries.forEach(el => {
+        if (el.isIntersecting) {
+          el.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+
+
+</html>
